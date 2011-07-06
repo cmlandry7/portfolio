@@ -5,8 +5,6 @@ gem 'rails', '3.0.9'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql'
-
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -18,6 +16,10 @@ gem 'mysql'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 # Bundle the extra gems:
+gem 'mysql'
+gem 'cocaine'
+gem 'carrierwave'
+gem 'rmagick'
 # gem 'bj'
 # gem 'nokogiri'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
