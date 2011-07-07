@@ -1,4 +1,6 @@
 Portfolio::Application.routes.draw do
+  resources :projects
+
   resources :posts do
     resources :comments
   end
