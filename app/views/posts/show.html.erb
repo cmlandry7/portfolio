@@ -15,6 +15,10 @@
   <%= @post.content %>
 </p>
 
+<p>
+  <%= image_tag @post.photo.url(:small) %>
+</p>
+
 <%= render :partial => "comments/comment",
             :collection => @post.comments %>
 

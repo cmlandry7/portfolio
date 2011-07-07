@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110706170744) do
+ActiveRecord::Schema.define(:version => 20110707184702) do
 
   create_table "comments", :force => true do |t|
     t.string   "commenter"
@@ -26,7 +26,10 @@ ActiveRecord::Schema.define(:version => 20110706170744) do
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "image"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
 end
