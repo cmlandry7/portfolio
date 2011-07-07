@@ -15,10 +15,6 @@
   <%= @post.content %>
 </p>
 
-<p>
-  <%= image_tag @post.image_url(:thumb).to_s %>
-</p>
-
 <%= render :partial => "comments/comment",
             :collection => @post.comments %>
 
