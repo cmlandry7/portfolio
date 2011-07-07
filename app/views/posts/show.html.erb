@@ -16,7 +16,7 @@
 </p>
 
 <p>
-  <%= image_tag @post.image_url(:thumb).to_s %>
+  <%= image_tag @post.photo.url(:small) %>
 </p>
 
 <%= render :partial => "comments/comment",
