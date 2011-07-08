@@ -1,3 +1,7 @@
+.scaffold-test {
+	background-color: #001234;
+}
+
 body { background-color: #fff; color: #333; }
 
 body, p, ol, ul, td {
