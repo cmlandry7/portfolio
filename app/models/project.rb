@@ -1,3 +1,3 @@
 class Project < ActiveRecord::Base
-  has_many :photos, :dependent => :destroy
+  has_many :images, :dependent => :destroy
 end

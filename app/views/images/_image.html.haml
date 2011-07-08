@@ -1,0 +1,8 @@
+%p
+  %b Caption:
+  = image.caption
+%p
+  %b Description
+  =image.description  
+%p
+  = link_to 'Delete Image', [image.project, image], :confirm => 'Are you sure?', :method => :delete
