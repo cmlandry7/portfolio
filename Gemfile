@@ -17,10 +17,12 @@ gem 'rails', '3.0.9'
 
 # Bundle the extra gems:
 gem 'mysql'
-gem 'cocaine'
-gem 'paperclip'
-gem 'fog'
 gem 'aws-s3', :require => 'aws/s3'
+gem 'cocaine'
+gem 'fog'
+gem 'haml', '3.1.2'
+gem 'haml-rails'
+gem 'paperclip'
 
 # gem 'bj'
 # gem 'nokogiri'
