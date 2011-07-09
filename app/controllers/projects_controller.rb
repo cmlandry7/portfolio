@@ -20,6 +20,16 @@ class ProjectsController < ApplicationController
       format.xml  { render :xml => @project }
     end
   end
+  
+  # @TODO: make admin controller
+  def admin_index
+    @projects = Project.all
+
+    respond_to do |format|
+      format.html # admin_index.html.erb
+      format.xml  { render :xml => @projects }
+    end
+  end
 
   # GET /projects/new
   # GET /projects/new.xml

@@ -2,7 +2,10 @@ class Image < ActiveRecord::Base
   belongs_to :project
   
   has_attached_file :photo, 
-    :styles => { :small => "150x150>" },
+    :styles => { 
+      :small => "150x150>",
+      :medium => "200x200>"
+    },
     :storage => :s3,
     :bucket => 'cml-portfolio',
     :s3_credentials => {
