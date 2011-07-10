@@ -1,24 +1,25 @@
 %p#notice= notice
 
-%p
-  %b Title:
-  = @project.title
-%p
-  %b Date:
-  = @project.date
-%p
-  %b Synopsis:
-  = @project.synopsis
-%p
-  %b Description:
-  = @project.description
-%h1 Images:
-= render :partial => "images/image", :collection => @project.images
+.project_div
+  .project_images
+  .project_info
+    .pr_thumb
+    .pr_title
+      = @project.title
+      .clearboth
+      .pr_date=@project.date
+    .clearboth
+    .pr_description= @project.description
+  .clearboth
+  .project_nav
+    = render :partial => "navigation"
 
-%h1 Add an Image:
-= render "images/form"
-  
-
-= link_to 'Edit', edit_project_path(@project)
-\|
-= link_to 'Back', projects_path
+.clearboth
+- if admin?
+  = link_to 'Edit', edit_project_path(@project)
+  \|
+  = link_to 'Back', projects_path
+  .clearboth
+  = render :partial => "images/image", :collection => @project.images
+  .clearboth
+  = render "images/form"
