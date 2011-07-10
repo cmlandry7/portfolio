@@ -7,8 +7,11 @@ Portfolio::Application.routes.draw do
   resources :posts do
     resources :comments
   end
-
-  get "home/index"
+  
+  resources :session
+  
+  match "/login" => "session#new", :as => :login
+  match "/logout" => "session#destroy", :as => :logout 
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

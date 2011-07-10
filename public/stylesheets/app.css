@@ -3,7 +3,9 @@
    *************************************************** */
 
 .background {
-	background-color: #eee;
+	background-color: #fff;
+	margin: 30px 0 0 30px;
+	padding: 20px;
 }
 
 .clearboth {
@@ -11,13 +13,19 @@
 }
 
 .header_links {
+	border-right: 2px solid #ffae00;
+	padding-right: 5px;
 	color: #001F4C;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 a.header_links {
-	color: #001F4C;
+	color: #15468e;
 	text-decoration: none;
+}
+
+a.header_links:hover {
+	color: #ffae00;
 }
 
 /* ***************************************************
@@ -30,4 +38,75 @@ a.header_links {
 	margin: 30px 30px 0 0;
 	width: 200px;
 	height: 200px;
+}
+
+/* ***************************************************
+   ** PROJECT GALLERY VIEW
+   *************************************************** */
+
+.project_div {
+	float: left;
+	width: 840px;
+	border: 1px solid gray;
+}
+
+.project_images {
+	float: left;
+	background-color: #fff;
+	width: 400px;
+	height: 250px;
+	border: 1px solid gray;
+}
+
+.project_info {
+	background-color: #fff;
+	float: left;
+	margin-left: 30px;
+	width: 400px;
+}
+
+.project_nav {
+	float: left;
+	border: 1px solid gray;
+	width: 400px;
+}
+
+.pr_thumb {
+	float: left;
+	border: 1px solid gray;
+	height: 50px;
+	width: 50px;
+}
+
+.pr_title {
+	color: #15468e;
+	float: left;
+	font-size: 28px;
+	font-weight: normal;
+	margin: 5px 0 0 15px;
+}
+
+.pr_date {
+	color: #ffae00;
+	float: right;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.pr_description {
+	border-left: 2px solid #ffae00;
+	color: #666;
+	margin-top: 15px;
+	padding-left: 10px;
+}
+
+.admin_image {
+	float: left;
+	width: 200px;
+	margin-top: 15px;
+}
+
+.image_upload {
+	float: left;
+	margin-top: 20px;	
 }
