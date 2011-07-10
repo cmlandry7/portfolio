@@ -6,13 +6,14 @@
   = javascript_include_tag :defaults
   = csrf_meta_tag
   
-%body.background
+%body
+  .background
 
-= link_to "Christina Landry |", root_path, { :class => "header_links" }
-= link_to "Portfolio |", projects_path, { :class => "header_links" }
-= link_to "My Blog", posts_path, { :class => "header_links" }
+    = link_to "Christina Landry", root_path, { :class => "header_links" }
+    = link_to "Portfolio", projects_path, { :class => "header_links" }
+    = link_to "My Blog", posts_path, { :class => "header_links" }
 
-.clearboth
+    .clearboth
 
 
-= yield
+    = yield

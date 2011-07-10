@@ -1,11 +1,14 @@
-= form_for([@project, @project.images.build], :html => {:multipart => true} ) do |f|
-  .field
-    = f.label :caption
-    = f.text_field :caption
-  .field
-    = f.label :description
-    = f.text_field :description
-  .field
-    = f.file_field :photo
-  .actions
-    = f.submit
+.image_upload
+  %b Add an image:
+
+  = form_for([@project, @project.images.build], :html => {:multipart => true} ) do |f|
+    .field
+      = f.label :caption
+      = f.text_field :caption
+    .field
+      = f.label :description
+      = f.text_field :description
+    .field
+      = f.file_field :photo
+    .actions
+      = f.submit
