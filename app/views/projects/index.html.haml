@@ -1,10 +1,7 @@
 - @projects.each do |project|
   .proj_div
-    = project.title
-    = project.id
-    - unless project.images.empty?
-      - image_url = project.images.first.photo.url(:small)
-      = link_to (image_tag(image_url)), project
+    - if project.thumbnail
+      = link_to (image_tag(project.thumbnail.url, :class => "lrg_thumb")), project
     - if admin?
       .clearboth
       = link_to 'Show', project
