@@ -8,10 +8,11 @@ Portfolio::Application.routes.draw do
     resources :comments
   end
   
-  resources :session
+  resources :session, :about
   
   match "/login" => "session#new", :as => :login
   match "/logout" => "session#destroy", :as => :logout 
+  match "/resume" => "about#resume", :as => :resume
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

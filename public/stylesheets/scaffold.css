@@ -1,7 +1,10 @@
 body { background-color: #ddd; color: #333; }
 
 body, p, ol, ul, td {
-  font-family: helvetica, arial, sans-serif, verdana;
+	background-image: url('/images/gry-background.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+	font-family: helvetica, arial, sans-serif, verdana;
   font-size:   13px;
   line-height: 18px;
 }

@@ -3,7 +3,9 @@
    *************************************************** */
 
 .background {
-	margin: 30px;
+	margin: auto;
+	padding: 20px 30px;
+	width: 960px;
 }
 
 .clearboth {
@@ -11,19 +13,27 @@
 }
 
 .header_links {
-	border-right: 1px solid #ffae00;
-	padding-right: 5px;
-	color: #001F4C;
-	font-size: 16px;
+	border-right: 1px solid #fffa7c;
+	padding-right: 10px;
+	margin-left: 10px;
+	color: #07236a;
+	font-size: 14px;
+	font-weight: lighter;
+	text-transform: uppercase;
 }
 
 a.header_links {
-	color: #15468e;
+	color: #07236a;
 	text-decoration: none;
 }
 
 a.header_links:hover {
-	color: #ffae00;
+	color: #fffa7c;
+}
+
+.first {
+	letter-spacing: 2px;
+	margin: 0;
 }
 
 /* ***************************************************
@@ -33,6 +43,11 @@ a.header_links:hover {
 .proj_div {
 	float: left;
 	margin: 30px 30px 0 0;
+}
+
+.proj_div:hover {
+	opacity:0.95;
+	filter:alpha(opacity=95);
 }
 
 .lrg_thumb {
@@ -48,7 +63,8 @@ a.header_links:hover {
 .project_div {
 	float: left;
 	margin-top: 15px;
-	width: 960px;
+	position: relative;
+	width: 100%;
 }
 
 .project_images {
@@ -109,7 +125,7 @@ a.header_links:hover {
 }
 
 .pr_title {
-	color: #15468e;
+	color: #07236a;
 	float: left;
 	font-size: 28px;
 	font-weight: normal;
@@ -117,16 +133,17 @@ a.header_links:hover {
 }
 
 .pr_date {
-	color: #ffae00;
+	color: #fffa7c;
 	float: right;
 	font-size: 14px;
 	margin-top: 10px;
 }
 
 .pr_description {
-	border-left: 1px solid #ffae00;
-	color: #666;
+	border-left: 1px solid #fffa7c;
+	color: #888;
 	padding-left: 10px;
+	letter-spacing: 1px;
 }
 
 .admin_image {
@@ -171,4 +188,13 @@ a.header_links:hover {
 	float: right;
 	font-size: 11px;
 	margin: 2px;
+}
+
+/* ***************************************************
+   ** ABOUT PAGES
+   *************************************************** */
+
+.resume {
+	margin-top: 30px;
+	width: 900px;
 }
