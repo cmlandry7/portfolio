@@ -5,8 +5,9 @@
     - @project.images.each do |image|
       .image_div
         = image_tag image.photo.url, :class => "proj_image"
-        .caption_div
-          .image_caption= image.caption
+        - if image.caption
+          .caption_div
+            .image_caption= image.caption
   .project_info
     .pr_description
       .pr_thumb
