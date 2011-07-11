@@ -1,2 +1,5 @@
-- (0..6).each do
+.nav_text More projects:
+- Project.all.each do |project|
   .pr_thumb
+    - thumb_url = project.thumbnail.url(:thumb)
+    = link_to (image_tag(thumb_url)), project

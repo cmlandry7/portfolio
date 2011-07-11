@@ -2,17 +2,20 @@
 
 .project_div
   .project_images
+    - @project.images.each do |image|
+      = image_tag image.photo.url, :class => "proj_image"
   .project_info
     .pr_thumb
+      = image_tag @project.thumbnail.url(:thumb)
     .pr_title
       = @project.title
       .clearboth
       .pr_date=@project.date
     .clearboth
     .pr_description= @project.description
-  .clearboth
-  .project_nav
-    = render :partial => "navigation"
+    .clearboth
+    .project_nav
+      = render :partial => "navigation"
 
 .clearboth
 - if admin?
