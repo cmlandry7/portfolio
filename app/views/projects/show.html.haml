@@ -3,19 +3,22 @@
 .project_div
   .project_images
     - @project.images.each do |image|
-      = image_tag image.photo.url, :class => "proj_image"
+      .image_div
+        = image_tag image.photo.url, :class => "proj_image"
+        .caption_div
+          .image_caption= image.caption
   .project_info
-    .pr_thumb
-      = image_tag @project.thumbnail.url(:thumb)
-    .pr_title
-      = @project.title
+    .pr_description
+      .pr_thumb
+        = image_tag @project.thumbnail.url(:thumb)
+      .pr_title
+        = @project.title
+        .clearboth
+        .pr_date=@project.date
       .clearboth
-      .pr_date=@project.date
+      = @project.description
     .clearboth
-    .pr_description= @project.description
-    .clearboth
-    .project_nav
-      = render :partial => "navigation"
+    = render :partial => "navigation"
 
 .clearboth
 - if admin?
