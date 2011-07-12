@@ -16,11 +16,14 @@
         = @project.title
         .clearboth
         .pr_date=@project.date
+      = link_to ( image_tag("/images/back.png", :class => "nav_arrow")), prev_project_path
+      = link_to ( image_tag("/images/up.png", :class => "nav_arrow")), projects_path
+      = link_to ( image_tag("/images/next.png", :class => "nav_arrow")), next_project_path
       .clearboth
       = @project.description
       %p=@project.synopsis
-    .clearboth
-    = render :partial => "navigation"
+    / .clearboth
+    / = render :partial => "navigation"
 
 .clearboth
 - if admin?

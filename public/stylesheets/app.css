@@ -98,7 +98,7 @@ a.header_links:hover {
 }
 
 .image_caption {
-	color: #ffae00;
+	color: #fffa7c;
 	float: right;
 	font-size: 14px;
 	margin: 5px;
@@ -188,6 +188,13 @@ a.header_links:hover {
 	float: right;
 	font-size: 11px;
 	margin: 2px;
+}
+
+.nav_arrow {
+	float: left;
+	margin: 7px 0 0 10px;
+	height: 15px;
+	width: 15px;
 }
 
 /* ***************************************************
