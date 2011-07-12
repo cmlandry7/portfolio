@@ -124,17 +124,22 @@ a.header_links:hover {
 	margin: 0 5px 15px 0;
 }
 
+.title_div {
+	float: left;
+	margin-left: 5px;
+}
+
 .pr_title {
 	color: #07236a;
 	float: left;
 	font-size: 28px;
 	font-weight: normal;
-	margin: 5px 0 0 10px;
+	margin-top: 5px;
 }
 
 .pr_date {
 	color: #fffa7c;
-	float: right;
+	float: left;
 	font-size: 14px;
 	margin-top: 10px;
 }

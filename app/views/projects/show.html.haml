@@ -12,13 +12,14 @@
     .pr_description
       .pr_thumb
         = image_tag @project.thumbnail.url(:thumb)
-      .pr_title
-        = @project.title
+      .title_div
+        .pr_title
+          = @project.title
+        = link_to ( image_tag("/images/back.png", :class => "nav_arrow")), prev_project_path
+        = link_to ( image_tag("/images/up.png", :class => "nav_arrow")), projects_path
+        = link_to ( image_tag("/images/next.png", :class => "nav_arrow")), next_project_path
         .clearboth
         .pr_date=@project.date
-      = link_to ( image_tag("/images/back.png", :class => "nav_arrow")), prev_project_path
-      = link_to ( image_tag("/images/up.png", :class => "nav_arrow")), projects_path
-      = link_to ( image_tag("/images/next.png", :class => "nav_arrow")), next_project_path
       .clearboth
       = @project.description
       %p=@project.synopsis
