@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110711022636) do
+ActiveRecord::Schema.define(:version => 20110713183456) do
 
   create_table "comments", :force => true do |t|
     t.string   "commenter"
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(:version => 20110711022636) do
     t.string   "thumbnail_content_type"
     t.integer  "thumbnail_file_size"
     t.datetime "thumbnail_updated_at"
+    t.integer  "ranking"
   end
 
 end
