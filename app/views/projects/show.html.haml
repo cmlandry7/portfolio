@@ -31,6 +31,8 @@
   = link_to 'Edit', edit_project_path(@project)
   \|
   = link_to 'Back', projects_path
+  \|
+  Ranking #{@project.ranking}
   .clearboth
   = render :partial => "images/image", :collection => @project.images
   .clearboth

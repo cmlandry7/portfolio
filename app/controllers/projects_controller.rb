@@ -2,7 +2,7 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.xml
   def index
-    @projects = Project.all
+    @projects = Project.all(:order => "ranking")
 
     respond_to do |format|
       format.html # index.html.erb
@@ -18,16 +18,6 @@ class ProjectsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @project }
-    end
-  end
-  
-  # @TODO: make admin controller
-  def admin_index
-    @projects = Project.all
-
-    respond_to do |format|
-      format.html # admin_index.html.erb
-      format.xml  { render :xml => @projects }
     end
   end
 
