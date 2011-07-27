@@ -1,4 +1,5 @@
 source 'http://rubygems.org'
+source :gemcutter
 
 gem 'rails', '3.0.9'
 
@@ -19,10 +20,9 @@ gem 'rails', '3.0.9'
 gem 'mysql'
 gem 'aws-s3', :require => 'aws/s3'
 gem 'cocaine'
-gem 'fog'
 gem 'haml', '3.1.2'
 gem 'haml-rails'
-gem 'paperclip'
+gem 'paperclip', '2.3.15'
 
 # gem 'bj'
 # gem 'nokogiri'
