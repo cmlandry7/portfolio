@@ -9,12 +9,13 @@
   
 %body
   .background
-
-    = link_to "christina landry", root_path, { :class => "header_links first" }
-    = link_to "Resume", resume_path, { :class => "header_links" }
-    = link_to "Contact", "mailto:cmlandry7@gmail.com", { :class => "header_links last" }
-
-    .clearboth
-
+    #header
+      = link_to "christina landry", root_path, { :class => "header_links", :id => "first" }
+      = link_to "Resume", resume_path, { :class => "header_links" }
+      = link_to "Contact", "mailto:cmlandry7@gmail.com", { :class => "header_links" }
+      %a{ :href => "http://www.facebook.com/christina.landry", :target => "_blank" }
+        %img.soc-buttons{ :src => "/images/fb-favicon.png" }
+      %a{ :href => "http://www.linkedin.com/in/christinalandry", :target => "_blank" }
+        %img.soc-buttons{ :src => "/images/linkedin-favicon.png" }
 
     = yield

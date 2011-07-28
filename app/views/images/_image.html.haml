@@ -1,10 +1,8 @@
 .admin_image
   = image_tag image.photo.url(:small)
-  .clearboth
-  %b Caption:
-  = image.caption
-  .clearboth
-  %b Description:
-  =image.description  
-  .clearboth
-  = link_to 'Delete Image', [image.project, image], :confirm => 'Are you sure?', :method => :delete
+  %p 
+    Caption:
+    = image.caption
+    %br Description:
+    =image.description  
+    = link_to 'Delete Image', [image.project, image], :confirm => 'Are you sure?', :method => :delete

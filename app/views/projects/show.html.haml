@@ -18,13 +18,10 @@
         = link_to ( image_tag("/images/back.png", :class => "nav_arrow")), prev_project_path
         = link_to ( image_tag("/images/up.png", :class => "nav_arrow")), projects_path
         = link_to ( image_tag("/images/next.png", :class => "nav_arrow")), next_project_path
-        .clearboth
         .pr_date=@project.date
       .clearboth
       = @project.description
       %p=@project.synopsis
-    / .clearboth
-    / = render :partial => "navigation"
 
 .clearboth
 - if admin?
@@ -32,8 +29,10 @@
   \|
   = link_to 'Back', projects_path
   \|
+  = link_to 'Destroy', @project, :confirm => 'Are you sure?', :method => :delete
+  \|
   Ranking #{@project.ranking}
-  .clearboth
-  = render :partial => "images/image", :collection => @project.images
-  .clearboth
-  = render "images/form"
+  #admin-images
+    = render :partial => "images/image", :collection => @project.images
+  #image-form
+    = render "images/form"

@@ -1,14 +1,8 @@
-- @projects.each do |project|
-  .proj_div
+#projects
+  - @projects.each do |project|
     - if project.thumbnail
       = link_to (image_tag(project.thumbnail.url, :class => "lrg_thumb")), project
-    - if admin?
-      .clearboth
-      = link_to 'Show', project
-      = link_to 'Edit', edit_project_path(project)
-      = link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete
 
 - if admin?    
   .clearboth
   = link_to 'New Project', new_project_path
-  = rank_projects
